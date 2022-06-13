@@ -1,0 +1,133 @@
+\hypertarget{_another_func_8cpp}{}\doxysection{Another\+Func.\+cpp File Reference}
+\label{_another_func_8cpp}\index{AnotherFunc.cpp@{AnotherFunc.cpp}}
+
+
+Matrix\+Game.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_matrix}{Matrix}}
+\begin{DoxyCompactList}\small\item\em const int n определяет размер матрицы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}{Rand}} ()
+\begin{DoxyCompactList}\small\item\em class \mbox{\hyperlink{class_matrix}{Matrix}} -\/ не используется в данном билде. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_another_func_8cpp_a361b472eac7b87e366694823f146ed9b}{Win}} (int a\mbox{[}$\,$\mbox{]}\mbox{[}n\mbox{]})
+\begin{DoxyCompactList}\small\item\em Функция выхода из цикла \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_another_func_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_another_func_8cpp_acfc02ec89670db29251fda6a66602ce2}\label{_another_func_8cpp_acfc02ec89670db29251fda6a66602ce2}} 
+const int {\bfseries n} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Matrix\+Game. 
+
+\begin{DoxyAuthor}{Author}
+Unkool\+Nobody 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 alpha 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29 Май 2022 года
+\end{DoxyDate}
+Данный файл содержит в себе исходный код программы, который должен изменять элемент в матрице. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_another_func_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_another_func_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{AnotherFunc.cpp@{AnotherFunc.cpp}!main@{main}}
+\index{main@{main}!AnotherFunc.cpp@{AnotherFunc.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+int a\mbox{[}n\mbox{]}\mbox{[}n\mbox{]} -\/ Матрица заданной размерности.
+
+random\+\_\+device rand -\/ Вызов рандомизации.
+
+a\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}=\mbox{\hyperlink{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}{Rand()}} -\/ Заполнение матрицы возвращённым случайным значением из функции.
+
+cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} a\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\char`\"{} \char`\"{} -\/ Вывод матрицы.
+
+while (Win(a) == true) -\/ Цикл с условием победы.
+
+if (str \texorpdfstring{$>$}{>}= 0 \&\& str \texorpdfstring{$<$}{<} n \&\& sto \texorpdfstring{$>$}{>}= 0 \&\& sto \texorpdfstring{$<$}{<} n) -\/ Проверка входа введённого значения в диапазон.
+
+if (a\mbox{[}str\mbox{]}\mbox{[}sto\mbox{]} == 1) -\/ Проверка значения в ячейке матрицы.
+
+a\mbox{[}str\mbox{]}\mbox{[}sto\mbox{]} = 0 -\/ Ввод противоположного значения.
+
+else -\/ Проверка значения в ячейке матрицы.
+
+a\mbox{[}str\mbox{]}\mbox{[}sto\mbox{]} = 1 -\/ Ввод противоположного значения.
+
+cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} a\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \char`\"{} \char`\"{} -\/ Вывод изменённой матрицы.\mbox{\Hypertarget{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}\label{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}} 
+\index{AnotherFunc.cpp@{AnotherFunc.cpp}!Rand@{Rand}}
+\index{Rand@{Rand}!AnotherFunc.cpp@{AnotherFunc.cpp}}
+\doxysubsubsection{\texorpdfstring{Rand()}{Rand()}}
+{\footnotesize\ttfamily int Rand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+class \mbox{\hyperlink{class_matrix}{Matrix}} -\/ не используется в данном билде. 
+
+Функция рандомизации int \mbox{\hyperlink{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}{Rand()}}
+
+Данная функция возвращает случайное число из диапазона от 0 до 1. Для выполнения нужна библиотека \#include $<$random$>$.
+
+\begin{DoxyReturn}{Returns}
+a -\/ возвращает радномное число из диапазона 0,1 в формате int
+\end{DoxyReturn}
+Код функции выглядит следующим образом\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{*\textcolor{keywordtype}{int} \mbox{\hyperlink{_another_func_8cpp_ac4b399fa4ea7d6b370a982a09b40daf3}{Rand}}() \{}
+\DoxyCodeLine{*\textcolor{keywordtype}{int} a = rand() \% 2;}
+\DoxyCodeLine{*\textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{ \}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_another_func_8cpp_a361b472eac7b87e366694823f146ed9b}\label{_another_func_8cpp_a361b472eac7b87e366694823f146ed9b}} 
+\index{AnotherFunc.cpp@{AnotherFunc.cpp}!Win@{Win}}
+\index{Win@{Win}!AnotherFunc.cpp@{AnotherFunc.cpp}}
+\doxysubsubsection{\texorpdfstring{Win()}{Win()}}
+{\footnotesize\ttfamily bool Win (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]}\mbox{[}n\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Функция выхода из цикла 
+
+Данная функция возвращает true если вся матрица единичная.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\mbox{[}$\,$\mbox{]}\mbox{[}n\mbox{]}} & -\/ матрица размером 4 на 4\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true (false) -\/ булева функция
+\end{DoxyReturn}
+Код функции выглядит следующим образом\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} \mbox{\hyperlink{_another_func_8cpp_a361b472eac7b87e366694823f146ed9b}{Win}}(\textcolor{keywordtype}{int} a[][n]) \{}
+\DoxyCodeLine{   \textcolor{keywordtype}{int} k=0;}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; i++) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < n; j++) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (a[i][j] = 1) k++;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (k == 25) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
